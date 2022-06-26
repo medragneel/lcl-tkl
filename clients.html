@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="./style.css">
+    <title>rendez-vous clients</title>
+</head>
+<body>
+    <nav>
+        <input type="date" id="date" name="date" value="">
+        <button type="submit" id='add' onclick="AddRow('tbc')">add row</button>
+        <a href="#" onclick="download_table_as_csv('tbc');">Download as CSV</a>
+        
+    </nav>
+    <center>
+    <table id="tbc">
+        <thead>
+        <th>date</th>
+        <th>nom</th>
+        <th>prenom</th>
+        <th>Num tel</th>
+        <th>status</th>
+        <th>total</th>
+        <th>verssement</th>
+        </thead>
+        
+    </table>
+    </center>
+    
+
+<script src="app.js"></script>
+</body>
+</html>

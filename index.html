@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <a class="open" href="#" onclick="openNav()">&#8594;</a>
+    <nav id="nav">
+        <a href="#" class="close" onclick="closeNav()">x</a>
+        <input id="dt" type="date" name="date" value=""  placeholder="date" >
+        <input id="name" type="text" name="name" value=""placeholder="name" >
+        <input id="pr" type="text" name="prenom" value=""placeholder="prenom" >
+        <input id="hr" type="number" name="heure" value=""placeholder="heure" >
+        <input id="nb" type="tel" name="tel" value=""    placeholder="tel" >
+        <input id="st" type="text" name="stat" value="" placeholder="status">
+        <input id="tl" type="number" name="total" value="" placeholder="total" >
+        <input id="vrs" type="number" name="vrs" value="" placeholder="verssement" >
+        <button id='sub' type="submit">submit</button>
+    </nav>
+    <br><br>    
+    <center>
+    <input id='search' onkeyup="filterData('search','table')" type="text" name="search" value="" placeholder="search for name">
+    </center>
+    <a href="#" onclick="download_table_as_csv('table');">Download as CSV</a>
+    <center>
+    <table id="table">
+        <thead>
+        <th>date</th>
+        <th>nom</th>
+        <th>prenom</th>
+        <th>heure</th>
+        <th>Num tel</th>
+        <th>status</th>
+        <th>total</th>
+        <th>verssement</th>
+        <th>reste</th>
+        </thead>
+    </table>
+    </center>
+    
+    <button id="reset" type="reset">reset</button>
+    
+<script src="app.js"></script>
+</body>
+</html>
